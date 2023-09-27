@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.counter.observe(this) {
             binding.tvCounter.text = it.toString()
         }
+        viewModel.price.observe(this) {
+            binding.tvTotalPriceValue.text = "IDR ${it}"
+        }
     }
 
 

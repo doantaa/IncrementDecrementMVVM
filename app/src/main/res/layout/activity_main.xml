@@ -19,6 +19,25 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="0" />
 
+    <TextView
+        android:id="@+id/tv_total_price_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_counter"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:text="Total price :"/>
+
+    <TextView
+        android:id="@+id/tv_total_price_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_price_label"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:text="IDR 18000"/>
+
+
     <LinearLayout
         android:id="@+id/ll_action_button"
         android:layout_width="match_parent"
